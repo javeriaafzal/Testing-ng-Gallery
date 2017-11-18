@@ -1,0 +1,37 @@
+{
+  "authors": [
+    "Tolga <tolga.k@outlook.com>"
+  ],
+  "dependencies": {
+    "bootstrap": "*",
+    "fontawesome": "*",
+    "toastr": "*",
+    "angular-bootstrap": "*",
+    "moment": "*",
+    "jquery-ui": "~1.11.4",
+    "jquery": "1.10.2",
+    "angular-ui-select": "*",
+    "watg-angular-autocomplete": "*",
+    "angular": "1.5.8",
+    "angular-route": "1.5.8",
+    "angular-sanitize": "1.5.8",
+    "angular-animate": "1.5.8",
+    "ng-file-upload": "*",
+    "angular-ui-tinymce": "*",
+    "ng-image-gallery": "^2.1.2"
+  },
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": "ISC",
+  "name": "FroalaTest",
+  "version": "1.0.0",
+  "resolutions": {
+    "tinymce": "^4.6.4"
+  }
+}

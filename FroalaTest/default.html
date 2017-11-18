@@ -1,0 +1,82 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <!--<script src="//cdn.rawgit.com/jpillora/xdomain/0.7.3/dist/xdomain.min.js"
+                slave="http://testdev00.teknita.com/resources.watg.com/proxy.html"></script>-->
+    <link href="http://testdev00.teknita.com/resources.watg.com/images/favicon.ico"
+          rel="shortcut icon"
+          type="image/x-icon" />
+    <title>Test Froala</title>
+    <link href="http://testdev00.teknita.com/resources.watg.com/css/style-watg-3.0.0.css"
+          rel="stylesheet" />
+    <link href="public/css/vendor.min.css"
+          rel="stylesheet" />
+    <link href="public/css/app.min.css"
+          rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+   
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+    <style type="text/css">
+        .ng-image-gallery {
+            font-family: 'Work Sans', sans-serif !important;
+            font-weight: 300;
+        }
+    </style>
+
+
+</head>
+
+<body ng-app="FroalaTest">
+    <h1><a href="https://github.com/thatisuday/ng-image-gallery" style="text-decoration:none; color:#333;">ng-image-gallery</a></h1>
+    <p ng-hide="counter == 0">Populating more images after {{counter}} seconds.</p>
+    <button ng-click="openGallery()">Open Gallery</button>
+    <button ng-click="addPhoto()">Add Photo</button>
+    <button ng-click="removePhoto()">Remove Photo</button>
+
+    <br />
+    <br />
+    <button ng-click="toggleThumbnails()">Enable/Disable Thumbnails</button>
+    <button ng-click="toggleInline()">Modal/Inline Gallery</button>
+    <button ng-click="toggleBubbles()">{{(bubbles) ? 'Switch off' : 'Switch on'}} bubbles</button>
+    <button ng-click="toggleImgBubbles()">{{(imgBubbles) ? 'Switch off' : 'Switch on'}} Image bubbles</button>
+    <br />
+    <br />
+    <label>Thumbnail size</label> <input type="number" ng-model="thumbSize"><br />
+    <label>Bubble size</label> <input type="number" ng-model="bubbleSize">
+
+    <br />
+    <br />
+    <button ng-click="closeOnBackground()">{{(bgClose) ? 'Do not close' : 'Close'}} on background click (modal gallery)</button>
+    <br />
+    <br />
+    Choose animation<br />
+    <label ng-repeat="class in ['fade', 'fadeup', 'zoom', 'slide', 'pop', 'revolve']">
+        <input type="radio" name="imgAnim" ng-model="conf.imgAnim" ng-value="class" /> {{class}}
+    </label>
+
+    <br />
+    <br />
+    <br />
+    <ng-image-gallery images="images" methods="methods" conf="conf" thumbnails="thumbnails" thumb-size="thumbSize" inline="inline" bubbles="bubbles" bubble-size="bubbleSize" img-bubbles="imgBubbles" bg-close="bgClose" piracy="true" on-open="opened();" on-close="closed();" on-delete="delete(img, cb)" bg-close="false"></ng-image-gallery>
+
+
+
+<script src="public/js/vendor.js"></script>
+<script src="public/js/app.js"></script>
+<script src="https://rawgit.com/hammerjs/hammer.js/v2.0.8/hammer.min.js"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,40 @@
+{
+  "name": "angular-drag-and-drop-lists-custom",
+  "main": "angular-drag-and-drop-lists.js",
+  "version": "2.1.3",
+  "homepage": "https://github.com/nathanbedford/angular-drag-and-drop-lists",
+  "authors": [
+    "Nathan Bedford <nathan.bedford@gmail.com>"
+  ],
+  "description": "Angular directives for sorting nested lists using the HTML5 Drag & Drop API",
+  "keywords": [
+    "angular",
+    "drag",
+    "drop",
+    "dnd",
+    "nested",
+    "sortable",
+    "lists",
+    "html5"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "demo",
+    "*.json",
+    "test",
+    "tests"
+  ],
+  "_release": "2.1.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.1.3",
+    "commit": "3b2baa34fe08c632720db3ad7ee6ca3108909c39"
+  },
+  "_source": "https://github.com/nathanbedford/angular-drag-and-drop-lists.git",
+  "_target": "^2.1.3",
+  "_originalSource": "angular-drag-and-drop-lists-custom",
+  "_direct": true
+}
